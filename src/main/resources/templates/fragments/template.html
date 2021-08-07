@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href = "../../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+<div th:fragment="header">
+    <ul class = "links">
+    <li><a th:href="@{/gui/master/getAll}">Masters</a></li>
+    <li><a th:href="@{/gui/planet/getAll}">Planets</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

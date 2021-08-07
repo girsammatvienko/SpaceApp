@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border=1>
+  <tr>
+    <td><h3>Id</h3></td>
+    <td><h3>Name</h3></td>
+    <td><h3>Owner</h3></td>
+  </tr>
+  <tr>
+    <td th:text = "${planet.id}"/>
+    <td th:text = "${planet.name}"/>
+    <td th:text = "${planet.master}"/>
+  </tr>
+</table>
+<br>
+<a th:href = "@{/gui/planet/getAll}">Back</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border=1>
+  <tr>
+    <td><h3>Id</h3></td>
+    <td><h3>Name</h3></td>
+    <td><h3>Age</h3></td>
+  </tr>
+  <tr>
+    <td th:text = "${master.id}"/>
+    <td th:text = "${master.name}"/>
+    <td th:text = "${master.age}"/>
+  </tr>
+</table>
+<br>
+<a th:href = "@{/gui/master/getAll}">Back</a>
+</form>
+</body>
+</html>

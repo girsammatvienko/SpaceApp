@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/gui/master/confirmAssigning}" method="post" th:object="${pair}">
+  Master name <input type="text" name = "masterName" id="masterName"/>
+  <br><br>
+  Planet name <input type="text" name="planetName" id="planetName"/>
+  <br><br>
+  <input type="submit" value="Assign"/>
+</form>
+</body>
+</html>

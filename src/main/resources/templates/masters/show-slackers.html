@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:insert="~{fragments/template :: header}"></div>
+<h1>Slackers</h1>
+<table border = 1>
+    <tr>
+        <td><h3>Name</h3></td>
+    </tr>
+    <tr th:each="slacker:${slackers}">
+        <td><a th:href="@{/gui/master/{id}(id=${slacker.id})}"><p th:text="${slacker.name}"/></a></td>
+    </tr>
+</table>
+<br>
+<a th:href = "@{/gui/master/getAll}">Back</a>
+</body>
+</html>
